@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { AccountModule } from 'tango-app-account';
+import { AccountModule } from 'projects/tango-app-account/src/public-api';
 
 @NgModule({
   imports: [

@@ -11,11 +11,13 @@ const routes: Routes = [
     children: [
       {
         path: 'overview',
-        component: OverviewComponent,
+        loadChildren: () =>
+      import('./route-wrappers/account-overview-wrapper.module').then((m) => m.AccountOverviewWrapperModule)
       },
       {
         path: 'settings',
-        component: SettingsComponent,
+        loadChildren: () =>
+      import('./route-wrappers/account-settings-wrapper.module').then((m) => m.AccountSettingsWrapperModule)
       },
       { path: '', redirectTo: 'overview', pathMatch: 'full' },
       { path: '**', redirectTo: 'overview', pathMatch: 'full' },

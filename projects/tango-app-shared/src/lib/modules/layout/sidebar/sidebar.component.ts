@@ -69,9 +69,9 @@ export class SidebarComponent implements OnInit, OnDestroy {
         'app.sidebar.default.minimize.desktop.default',
         config
       ) as boolean;
-      if (this.appSidebarDefaultMinimizeDesktopDefault) {
+      // if (this.appSidebarDefaultMinimizeDesktopDefault) {
         document.body.setAttribute('data-kt-app-sidebar-minimize', 'on');
-      }
+      // }
 
       this.appSidebarDefaultMinimizeDesktopHoverable = this.layout.getProp(
         'app.sidebar.default.minimize.desktop.hoverable',
@@ -91,9 +91,9 @@ export class SidebarComponent implements OnInit, OnDestroy {
         'app.sidebar.default.minimize.mobile.default',
         config
       ) as boolean;
-      if (this.appSidebarDefaultMinimizeMobileDefault) {
+      // if (this.appSidebarDefaultMinimizeMobileDefault) {
         document.body.setAttribute('data-kt-app-sidebar-minimize-mobile', 'on');
-      }
+      // }
 
       this.appSidebarDefaultMinimizeMobileHoverable = this.layout.getProp(
         'app.sidebar.default.minimize.mobile.hoverable',

@@ -84,6 +84,12 @@
     "tango-app-account": [
       "./dist/tango-app-account"
     ],
+    "tango-app-account-overview": [
+      "./dist/tango-app-account-overview"
+    ],
+    "tango-app-account-settings": [
+      "./dist/tango-app-account-settings"
+    ],
     "tango-app-auth": [
       "./dist/tango-app-auth"
     ],
