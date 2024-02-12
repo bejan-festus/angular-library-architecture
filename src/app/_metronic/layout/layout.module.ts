@@ -17,7 +17,6 @@ import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ScriptsInitComponent } from './components/scripts-init/scripts-init.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { TopbarComponent } from './components/topbar/topbar.component';
 import { PageTitleComponent } from './components/header/page-title/page-title.component';
 import { HeaderMenuComponent } from './components/header/header-menu/header-menu.component';
 import {
@@ -56,7 +55,6 @@ const routes: Routes = [
     FooterComponent,
     ScriptsInitComponent,
     ToolbarComponent,
-    TopbarComponent,
     PageTitleComponent,
     HeaderMenuComponent,
     EngagesComponent,

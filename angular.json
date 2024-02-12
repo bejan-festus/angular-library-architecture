@@ -49,7 +49,7 @@
             ]
           },
           "configurations": {
-            "production": {
+            "prod": {
               "budgets": [
                 {
                   "type": "initial",
@@ -70,6 +70,69 @@
               ],
               "outputHashing": "all"
             },
+            "dev": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "stage": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.stage.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "test": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.test.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -79,16 +142,25 @@
               "namedChunks": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "dev"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "buildTarget": "demo1:build:production"
+            "prod": {
+              "buildTarget": "demo1:build:prod"
             },
             "development": {
               "buildTarget": "demo1:build:development"
+            },
+            "dev": {
+              "buildTarget": "demo1:build:dev"
+            },
+            "test": {
+              "buildTarget": "demo1:build:test"
+            },
+            "stage": {
+              "buildTarget": "demo1:build:stage"
             }
           },
           "defaultConfiguration": "development"
@@ -165,6 +237,90 @@
             "lintFilePatterns": [
               "projects/tango-app-shared/**/*.ts",
               "projects/tango-app-shared/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-app-metronics": {
+      "projectType": "library",
+      "root": "projects/tango-app-metronics",
+      "sourceRoot": "projects/tango-app-metronics/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-app-metronics/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-app-metronics/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-app-metronics/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-app-metronics/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-app-metronics/**/*.ts",
+              "projects/tango-app-metronics/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-app-account": {
+      "projectType": "library",
+      "root": "projects/tango-app-account",
+      "sourceRoot": "projects/tango-app-account/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-app-account/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-app-account/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-app-account/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-app-account/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-app-account/**/*.ts",
+              "projects/tango-app-account/**/*.html"
             ]
           }
         }

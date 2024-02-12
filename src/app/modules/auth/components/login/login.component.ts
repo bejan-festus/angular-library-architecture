@@ -73,6 +73,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   submit() {
+    localStorage.setItem('isLoggedIn', 'true')
     this.hasError = false;
     const loginSubscr = this.authService
       .login(this.f.email.value, this.f.password.value)

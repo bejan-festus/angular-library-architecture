@@ -50,11 +50,14 @@
     "rxjs": "~7.8.0",
     "socicon": "3.0.5",
     "sweetalert2": "11.4.8",
+    "tango-app-account": "^0.0.2",
+    "tango-app-metronics": "^0.0.7",
+    "tango-app-shared": "^0.0.6",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.0.8",
+    "@angular-devkit/build-angular": "^17.1.3",
     "@angular-eslint/builder": "^17.1.1",
     "@angular-eslint/eslint-plugin": "^17.1.1",
     "@angular-eslint/eslint-plugin-template": "^17.1.1",

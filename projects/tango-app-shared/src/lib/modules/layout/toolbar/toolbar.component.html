@@ -1,0 +1,27 @@
+<!--begin::Toolbar container-->
+<div id="kt_app_toolbar_container" class="app-container" [ngClass]="appToolbarContainerCSSClass">
+  <ng-container *ngIf="showPageTitle()">
+    <lib-page-title [appPageTitleDirection]="appPageTitleDirection" [appPageTitleBreadcrumb]="appPageTitleBreadcrumb"
+      [appPageTitleDescription]="appPageTitleDescription" class="page-title d-flex flex-wrap me-3"
+      [ngClass]="{'flex-column justify-content-center': appPageTitleDirection === 'column', 'align-items-center': appPageTitleDirection !== 'column', appPageTitleCSSClass}">
+    </lib-page-title>
+  </ng-container>
+
+  <ng-container *ngIf="appToolbarLayout === 'classic'">
+    <lib-classic class="d-flex align-items-center gap-2 gap-lg-3"></lib-classic>
+  </ng-container>
+  <ng-container *ngIf="appToolbarLayout === 'accounting'">
+    <lib-accounting class="d-flex align-items-center me-5"></lib-accounting>
+  </ng-container>
+  <ng-container *ngIf="appToolbarLayout === 'extended'">
+    <lib-extended class="d-flex align-items-center flex-shrink-0 me-5"></lib-extended>
+  </ng-container>
+  <ng-container *ngIf="appToolbarLayout === 'reports'">
+    <lib-reports class="d-flex align-items-center overflow-auto" [appPageTitleDisplay]="appPageTitleDisplay">
+    </lib-reports>
+  </ng-container>
+  <ng-container *ngIf="appToolbarLayout === 'saas'">
+    <lib-saas class="d-flex align-items-center gap-2" [appPageTitleDisplay]="appPageTitleDisplay"></lib-saas>
+  </ng-container>
+</div>
+<!--end::Toolbar container-->

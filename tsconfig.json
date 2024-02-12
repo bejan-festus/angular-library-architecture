@@ -20,6 +20,15 @@
     "target": "es2022",
     "module": "es2022",
     "paths": {
+      "tango-app-account": [
+        "./dist/tango-app-account"
+      ],
+      "tango-app-auth": [
+        "./dist/tango-app-auth"
+      ],
+      "tango-app-metronics": [
+        "./dist/tango-app-metronics"
+      ],
       "tango-app-shared": [
         "./dist/tango-app-shared"
       ]
