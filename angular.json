@@ -3,11 +3,12 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "demo1": {
+    "retail-dashboard-ui-v3": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "standalone": false
         },
         "@schematics/angular:application": {
           "strict": true
@@ -20,7 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/demo1",
+            "outputPath": "dist/retail-dashboard-ui-v3",
             "allowedCommonJsDependencies": [
               "object-path",
               "apexcharts",
@@ -148,19 +149,19 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "prod": {
-              "buildTarget": "demo1:build:prod"
+              "buildTarget": "retail-dashboard-ui-v3:build:prod"
             },
             "development": {
-              "buildTarget": "demo1:build:development"
+              "buildTarget": "retail-dashboard-ui-v3:build:development"
             },
             "dev": {
-              "buildTarget": "demo1:build:dev"
+              "buildTarget": "retail-dashboard-ui-v3:build:dev"
             },
             "test": {
-              "buildTarget": "demo1:build:test"
+              "buildTarget": "retail-dashboard-ui-v3:build:test"
             },
             "stage": {
-              "buildTarget": "demo1:build:stage"
+              "buildTarget": "retail-dashboard-ui-v3:build:stage"
             }
           },
           "defaultConfiguration": "development"
@@ -168,7 +169,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "demo1:build"
+            "buildTarget": "retail-dashboard-ui-v3:build"
           }
         },
         "test": {
@@ -202,6 +203,15 @@
     },
     "tango-app-shared": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
       "root": "projects/tango-app-shared",
       "sourceRoot": "projects/tango-app-shared/src",
       "prefix": "lib",
@@ -244,6 +254,15 @@
     },
     "tango-app-metronics": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
       "root": "projects/tango-app-metronics",
       "sourceRoot": "projects/tango-app-metronics/src",
       "prefix": "lib",
@@ -284,23 +303,32 @@
         }
       }
     },
-    "tango-app-account": {
+    "tango-manage": {
       "projectType": "library",
-      "root": "projects/tango-app-account",
-      "sourceRoot": "projects/tango-app-account/src",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-manage",
+      "sourceRoot": "projects/tango-manage/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/tango-app-account/ng-package.json"
+            "project": "projects/tango-manage/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/tango-app-account/tsconfig.lib.prod.json"
+              "tsConfig": "projects/tango-manage/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/tango-app-account/tsconfig.lib.json"
+              "tsConfig": "projects/tango-manage/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -308,7 +336,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/tango-app-account/tsconfig.spec.json",
+            "tsConfig": "projects/tango-manage/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -319,30 +347,39 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/tango-app-account/**/*.ts",
-              "projects/tango-app-account/**/*.html"
+              "projects/tango-manage/**/*.ts",
+              "projects/tango-manage/**/*.html"
             ]
           }
         }
       }
     },
-    "tango-app-account-overview": {
+    "tango-manage-brands": {
       "projectType": "library",
-      "root": "projects/tango-app-account-overview",
-      "sourceRoot": "projects/tango-app-account-overview/src",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-manage-brands",
+      "sourceRoot": "projects/tango-manage-brands/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/tango-app-account-overview/ng-package.json"
+            "project": "projects/tango-manage-brands/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/tango-app-account-overview/tsconfig.lib.prod.json"
+              "tsConfig": "projects/tango-manage-brands/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/tango-app-account-overview/tsconfig.lib.json"
+              "tsConfig": "projects/tango-manage-brands/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -350,7 +387,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/tango-app-account-overview/tsconfig.spec.json",
+            "tsConfig": "projects/tango-manage-brands/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -361,30 +398,39 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/tango-app-account-overview/**/*.ts",
-              "projects/tango-app-account-overview/**/*.html"
+              "projects/tango-manage-brands/**/*.ts",
+              "projects/tango-manage-brands/**/*.html"
             ]
           }
         }
       }
     },
-    "tango-app-account-settings": {
+    "tango-manage-overview": {
       "projectType": "library",
-      "root": "projects/tango-app-account-settings",
-      "sourceRoot": "projects/tango-app-account-settings/src",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-manage-overview",
+      "sourceRoot": "projects/tango-manage-overview/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/tango-app-account-settings/ng-package.json"
+            "project": "projects/tango-manage-overview/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/tango-app-account-settings/tsconfig.lib.prod.json"
+              "tsConfig": "projects/tango-manage-overview/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/tango-app-account-settings/tsconfig.lib.json"
+              "tsConfig": "projects/tango-manage-overview/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -392,7 +438,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/tango-app-account-settings/tsconfig.spec.json",
+            "tsConfig": "projects/tango-manage-overview/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -403,8 +449,722 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/tango-app-account-settings/**/*.ts",
-              "projects/tango-app-account-settings/**/*.html"
+              "projects/tango-manage-overview/**/*.ts",
+              "projects/tango-manage-overview/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-manage-stores": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-manage-stores",
+      "sourceRoot": "projects/tango-manage-stores/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-manage-stores/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-manage-stores/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-manage-stores/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-manage-stores/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-manage-stores/**/*.ts",
+              "projects/tango-manage-stores/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-manage-users": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-manage-users",
+      "sourceRoot": "projects/tango-manage-users/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-manage-users/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-manage-users/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-manage-users/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-manage-users/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-manage-users/**/*.ts",
+              "projects/tango-manage-users/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-manage-tickets": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-manage-tickets",
+      "sourceRoot": "projects/tango-manage-tickets/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-manage-tickets/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-manage-tickets/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-manage-tickets/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-manage-tickets/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-manage-tickets/**/*.ts",
+              "projects/tango-manage-tickets/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-manage-reports": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-manage-reports",
+      "sourceRoot": "projects/tango-manage-reports/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-manage-reports/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-manage-reports/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-manage-reports/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-manage-reports/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-manage-reports/**/*.ts",
+              "projects/tango-manage-reports/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-manage-audit": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-manage-audit",
+      "sourceRoot": "projects/tango-manage-audit/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-manage-audit/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-manage-audit/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-manage-audit/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-manage-audit/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-manage-audit/**/*.ts",
+              "projects/tango-manage-audit/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-manage-settings": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-manage-settings",
+      "sourceRoot": "projects/tango-manage-settings/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-manage-settings/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-manage-settings/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-manage-settings/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-manage-settings/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-manage-settings/**/*.ts",
+              "projects/tango-manage-settings/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-store": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-store",
+      "sourceRoot": "projects/tango-store/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-store/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-store/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-store/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-store/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-store/**/*.ts",
+              "projects/tango-store/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-store-infrastructure": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-store-infrastructure",
+      "sourceRoot": "projects/tango-store-infrastructure/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-store-infrastructure/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-store-infrastructure/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-store-infrastructure/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-store-infrastructure/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-store-infrastructure/**/*.ts",
+              "projects/tango-store-infrastructure/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-store-data-mismatch": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-store-data-mismatch",
+      "sourceRoot": "projects/tango-store-data-mismatch/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-store-data-mismatch/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-store-data-mismatch/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-store-data-mismatch/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-store-data-mismatch/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-store-data-mismatch/**/*.ts",
+              "projects/tango-store-data-mismatch/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-store-cameras": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-store-cameras",
+      "sourceRoot": "projects/tango-store-cameras/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-store-cameras/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-store-cameras/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-store-cameras/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-store-cameras/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-store-cameras/**/*.ts",
+              "projects/tango-store-cameras/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-store-zones": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-store-zones",
+      "sourceRoot": "projects/tango-store-zones/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-store-zones/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-store-zones/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-store-zones/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-store-zones/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-store-zones/**/*.ts",
+              "projects/tango-store-zones/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-store-mat": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-store-mat",
+      "sourceRoot": "projects/tango-store-mat/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-store-mat/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-store-mat/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-store-mat/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-store-mat/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-store-mat/**/*.ts",
+              "projects/tango-store-mat/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-store-settings": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-store-settings",
+      "sourceRoot": "projects/tango-store-settings/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-store-settings/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-store-settings/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-store-settings/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-store-settings/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-store-settings/**/*.ts",
+              "projects/tango-store-settings/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "tango-auth": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/tango-auth",
+      "sourceRoot": "projects/tango-auth/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tango-auth/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tango-auth/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tango-auth/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tango-auth/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/tango-auth/**/*.ts",
+              "projects/tango-auth/**/*.html"
             ]
           }
         }

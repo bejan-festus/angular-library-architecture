@@ -37,6 +37,58 @@
       ],
       "tango-app-shared": [
         "./dist/tango-app-shared"
+      ],
+      "tango-auth": [
+        "./dist/tango-auth"
+      ],
+      "tango-manage": [
+        "./dist/tango-manage"
+      ],
+      "tango-manage-audit": [
+        "./dist/tango-manage-audit"
+      ],
+      "tango-manage-brands": [
+        "./dist/tango-manage-brands",
+        "./dist/tango-manage-brands"
+      ],
+      "tango-manage-overview": [
+        "./dist/tango-manage-overview"
+      ],
+      "tango-manage-reports": [
+        "./dist/tango-manage-reports"
+      ],
+      "tango-manage-settings": [
+        "./dist/tango-manage-settings"
+      ],
+      "tango-manage-stores": [
+        "./dist/tango-manage-stores"
+      ],
+      "tango-manage-tickets": [
+        "./dist/tango-manage-tickets"
+      ],
+      "tango-manage-users": [
+        "./dist/tango-manage-users"
+      ],
+      "tango-store": [
+        "./dist/tango-store"
+      ],
+      "tango-store-cameras": [
+        "./dist/tango-store-cameras"
+      ],
+      "tango-store-data-mismatch": [
+        "./dist/tango-store-data-mismatch"
+      ],
+      "tango-store-infrastructure": [
+        "./dist/tango-store-infrastructure"
+      ],
+      "tango-store-mat": [
+        "./dist/tango-store-mat"
+      ],
+      "tango-store-settings": [
+        "./dist/tango-store-settings"
+      ],
+      "tango-store-zones": [
+        "./dist/tango-store-zones"
       ]
     },
     "lib": [

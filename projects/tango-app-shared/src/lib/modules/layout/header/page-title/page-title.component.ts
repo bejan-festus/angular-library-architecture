@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { PageInfoService, PageLink } from 'tango-app-metronics';
 
@@ -17,12 +17,21 @@ export class PageTitleComponent implements OnInit, OnDestroy {
   description$: Observable<string>;
   bc$: Observable<Array<PageLink>>;
 
-  constructor(private pageInfo: PageInfoService) {}
+  constructor(private pageInfo: PageInfoService, private cd:ChangeDetectorRef) {}
 
   ngOnInit(): void {
     this.title$ = this.pageInfo.title.asObservable();
     this.description$ = this.pageInfo.description.asObservable();
     this.bc$ = this.pageInfo.breadcrumbs.asObservable();
+    this.title$.subscribe((e)=>{
+      this.cd.detectChanges()
+    })
+    this.description$.subscribe((e)=>{
+      this.cd.detectChanges()
+    })
+    this.bc$.subscribe((e)=>{
+      this.cd.detectChanges()
+    })
   }
 
   ngOnDestroy() {

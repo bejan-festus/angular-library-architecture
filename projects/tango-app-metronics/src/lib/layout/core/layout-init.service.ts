@@ -94,6 +94,7 @@ export class LayoutInitService {
     if (pageTitle) {
       pageTitle.description = false;
       pageTitle.breadCrumb = true;
+      pageTitle.direction = 'row';
       const updatedApp = { ...config.app, ...pageTitle };
       this.config.next({ ...config, ...updatedApp });
     }

@@ -27,8 +27,8 @@ export class ScriptsInitComponent implements OnInit, OnDestroy {
   ) {
     const initPageInfo = () => {
       setTimeout(() => {
-        this.pageInfo.calculateTitle();
-        this.pageInfo.calculateBreadcrumbs();
+        // this.pageInfo.calculateTitle();
+        // this.pageInfo.calculateBreadcrumbs();
 
         this.pageInfo.title.asObservable().subscribe((title) => {
           this.titleService.setTitle(title + ' - Metronic');

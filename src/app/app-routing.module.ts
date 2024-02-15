@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from 'tango-app-shared';
+import { AuthGuard } from '../../projects/tango-auth/src/public-api';
 
 export const routes: Routes = [
+  // {
+  //   path: 'auth',
+  //   loadChildren: () =>
+  //     import('./modules/auth/auth.module').then((m) => m.AuthModule),
+  // },
   {
     path: 'auth',
     loadChildren: () =>
-      import('./modules/auth/auth.module').then((m) => m.AuthModule),
+      import('../../projects/tango-auth/src/public-api').then((m) => m.TangoAuthModule),
   },
   {
     path: 'error',

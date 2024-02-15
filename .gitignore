@@ -9,9 +9,13 @@
 
 # cache
 /.angular
+/.nx
+
 
 # dependencies
 /node_modules
+/projects
+
 
 # profiling files
 chrome-profiler-events*.json
@@ -44,6 +48,7 @@ yarn-error.log
 testem.log
 /typings
 .angular
+.nx
 
 # System Files
 .DS_Store

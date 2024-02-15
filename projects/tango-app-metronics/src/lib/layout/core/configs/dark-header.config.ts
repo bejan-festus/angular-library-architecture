@@ -94,7 +94,7 @@ export const DarkHeaderConfig: ILayout = {
       display: true,
       breadCrumb: true,
       description: false,
-      direction: 'column',
+      direction: 'row',
     },
     content: {
       componentName: 'content',

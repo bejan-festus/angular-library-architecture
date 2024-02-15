@@ -98,6 +98,58 @@
     ],
     "tango-app-shared": [
       "./dist/tango-app-shared"
+    ],
+    "tango-auth": [
+      "./dist/tango-auth"
+    ],
+    "tango-manage": [
+      "./dist/tango-manage"
+    ],
+    "tango-manage-audit": [
+      "./dist/tango-manage-audit"
+    ],
+    "tango-manage-brands": [
+      "./dist/tango-manage-brands",
+      "./dist/tango-manage-brands"
+    ],
+    "tango-manage-overview": [
+      "./dist/tango-manage-overview"
+    ],
+    "tango-manage-reports": [
+      "./dist/tango-manage-reports"
+    ],
+    "tango-manage-settings": [
+      "./dist/tango-manage-settings"
+    ],
+    "tango-manage-stores": [
+      "./dist/tango-manage-stores"
+    ],
+    "tango-manage-tickets": [
+      "./dist/tango-manage-tickets"
+    ],
+    "tango-manage-users": [
+      "./dist/tango-manage-users"
+    ],
+    "tango-store": [
+      "./dist/tango-store"
+    ],
+    "tango-store-cameras": [
+      "./dist/tango-store-cameras"
+    ],
+    "tango-store-data-mismatch": [
+      "./dist/tango-store-data-mismatch"
+    ],
+    "tango-store-infrastructure": [
+      "./dist/tango-store-infrastructure"
+    ],
+    "tango-store-mat": [
+      "./dist/tango-store-mat"
+    ],
+    "tango-store-settings": [
+      "./dist/tango-store-settings"
+    ],
+    "tango-store-zones": [
+      "./dist/tango-store-zones"
     ]
   },
   "nxJsonPlugins": [],
@@ -118,19 +170,19 @@
       },
       {
         "file": ".gitignore",
-        "hash": "10273457979158683370"
+        "hash": "11171842503375859869"
       },
       {
         "file": "README.md",
-        "hash": "9924576187234577148"
+        "hash": "10091868434188119120"
       },
       {
         "file": "angular.json",
-        "hash": "11425948085006601642"
+        "hash": "4576974495039224058"
       },
       {
         "file": "karma.conf.js",
-        "hash": "12408235798389333972"
+        "hash": "6940679058811070035"
       },
       {
         "file": "ngcc.config.js",
@@ -138,135 +190,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "8298140999021899826"
+        "hash": "9153137237217459323"
       },
       {
         "file": "package.json",
-        "hash": "12441696994531440193"
-      },
-      {
-        "file": "projects/tango-app-account/.eslintrc.json",
-        "hash": "14363505610686800042"
-      },
-      {
-        "file": "projects/tango-app-account/README.md",
-        "hash": "492972498620468920"
-      },
-      {
-        "file": "projects/tango-app-account/ng-package.json",
-        "hash": "13845643575219572141"
-      },
-      {
-        "file": "projects/tango-app-account/package.json",
-        "hash": "17033850888003483252"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/account-routing.module.ts",
-        "hash": "12786303800109449427"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/account.component.html",
-        "hash": "1548545005195248660"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/account.component.ts",
-        "hash": "11182006595173912852"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/account.module.ts",
-        "hash": "15128102219380598036"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/overview/overview.component.html",
-        "hash": "9533751471479046398"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/overview/overview.component.ts",
-        "hash": "5448682501834254726"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/connected-accounts/connected-accounts.component.html",
-        "hash": "11570466169020981005"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/connected-accounts/connected-accounts.component.ts",
-        "hash": "4955350300498990777"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/deactivate-account/deactivate-account.component.html",
-        "hash": "15077220743949854792"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/deactivate-account/deactivate-account.component.ts",
-        "hash": "13035570790271175393"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/email-preferences/email-preferences.component.html",
-        "hash": "12599741412402954243"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/email-preferences/email-preferences.component.ts",
-        "hash": "3569291703401145025"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/notifications/notifications.component.html",
-        "hash": "6555778787248096137"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/notifications/notifications.component.ts",
-        "hash": "15345159110877314225"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/profile-details/profile-details.component.html",
-        "hash": "11863034969558585116"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/profile-details/profile-details.component.ts",
-        "hash": "16221158747069440880"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/sign-in-method/sign-in-method.component.html",
-        "hash": "13666950910254815939"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/forms/sign-in-method/sign-in-method.component.ts",
-        "hash": "1391702467319235143"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/settings.component.html",
-        "hash": "12859801323447963635"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/components/settings/settings.component.ts",
-        "hash": "17766015263554399709"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/interfaces/account-local-state.ts",
-        "hash": "14870956146922089932"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/services/account-local-state.service.ts",
-        "hash": "4282252093120998977"
-      },
-      {
-        "file": "projects/tango-app-account/src/lib/services/api.service.ts",
-        "hash": "7334283715884709855"
-      },
-      {
-        "file": "projects/tango-app-account/src/public-api.ts",
-        "hash": "6644743512614877878"
-      },
-      {
-        "file": "projects/tango-app-account/tsconfig.lib.json",
-        "hash": "3854248313799891276"
-      },
-      {
-        "file": "projects/tango-app-account/tsconfig.lib.prod.json",
-        "hash": "6958467553555132988"
-      },
-      {
-        "file": "projects/tango-app-account/tsconfig.spec.json",
-        "hash": "6187331034101419811"
+        "hash": "16520441243998405144"
       },
       {
         "file": "projects/tango-app-metronics/.eslintrc.json",
@@ -398,7 +326,7 @@
       },
       {
         "file": "projects/tango-app-metronics/src/lib/layout/core/configs/dark-header.config.ts",
-        "hash": "10389371070099079811"
+        "hash": "14573022280238435581"
       },
       {
         "file": "projects/tango-app-metronics/src/lib/layout/core/configs/dark-sidebar.config.ts",
@@ -414,7 +342,7 @@
       },
       {
         "file": "projects/tango-app-metronics/src/lib/layout/core/layout-init.service.ts",
-        "hash": "9270452941462443255"
+        "hash": "1939615405153748804"
       },
       {
         "file": "projects/tango-app-metronics/src/lib/layout/core/layout.service.ts",
@@ -594,7 +522,7 @@
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/header/header-menu/header-menu.component.html",
-        "hash": "9613167009275527563"
+        "hash": "3064807459494315033"
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/header/header-menu/header-menu.component.scss",
@@ -606,11 +534,11 @@
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/header/header-menu/header-menu.component.ts",
-        "hash": "1034994968360226770"
+        "hash": "11137680152524781028"
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/header/header.component.html",
-        "hash": "10403072616370927921"
+        "hash": "2065065672594064735"
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/header/header.component.scss",
@@ -642,11 +570,11 @@
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/header/page-title/page-title.component.html",
-        "hash": "145026704524950501"
+        "hash": "14365122903105613407"
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/header/page-title/page-title.component.ts",
-        "hash": "11203189958838782889"
+        "hash": "4137830599482315777"
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/keenicon/icons.json",
@@ -690,7 +618,7 @@
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/scripts-init/scripts-init.component.ts",
-        "hash": "9496986939681889602"
+        "hash": "17551552020659118644"
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/scroll-top/scroll-top.component.html",
@@ -718,7 +646,7 @@
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/sidebar/sidebar-logo/sidebar-logo.component.html",
-        "hash": "10695524064103552712"
+        "hash": "12322077335810068956"
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/sidebar/sidebar-logo/sidebar-logo.component.scss",
@@ -734,7 +662,7 @@
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/sidebar/sidebar-menu/sidebar-menu.component.html",
-        "hash": "10419002236559282645"
+        "hash": "613567589203825882"
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/sidebar/sidebar-menu/sidebar-menu.component.scss",
@@ -762,7 +690,7 @@
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/sidebar/sidebar.component.ts",
-        "hash": "2235459066393256276"
+        "hash": "12054540591908643731"
       },
       {
         "file": "projects/tango-app-shared/src/lib/modules/layout/toolbar/accounting/accounting.component.html",
@@ -861,12 +789,16 @@
         "hash": "782181681104640580"
       },
       {
-        "file": "projects/tango-app-shared/src/lib/routes/route-wraper-modules/account-wrapper.module.ts",
-        "hash": "10081268818951422999"
+        "file": "projects/tango-app-shared/src/lib/routes/route-wraper-modules/manage-wrapper.module.ts",
+        "hash": "11071886079233717528"
+      },
+      {
+        "file": "projects/tango-app-shared/src/lib/routes/route-wraper-modules/store-wrapper.module.ts",
+        "hash": "17641997397538081844"
       },
       {
         "file": "projects/tango-app-shared/src/lib/routes/routing.ts",
-        "hash": "12856328389478179940"
+        "hash": "6965822470306150469"
       },
       {
         "file": "projects/tango-app-shared/src/lib/services/auth.service.ts",
@@ -890,6 +822,1070 @@
       },
       {
         "file": "projects/tango-app-shared/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-auth/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-auth/README.md",
+        "hash": "15568471839171785005"
+      },
+      {
+        "file": "projects/tango-auth/ng-package.json",
+        "hash": "14057482234445715445"
+      },
+      {
+        "file": "projects/tango-auth/package.json",
+        "hash": "4266553206487293403"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-forgot-password/tango-auth-forgot-password.component.html",
+        "hash": "8498837665812615715"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-forgot-password/tango-auth-forgot-password.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-forgot-password/tango-auth-forgot-password.component.spec.ts",
+        "hash": "10695346499609836343"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-forgot-password/tango-auth-forgot-password.component.ts",
+        "hash": "15250233818218920775"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-login/tango-auth-login.component.html",
+        "hash": "6679191631043265255"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-login/tango-auth-login.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-login/tango-auth-login.component.spec.ts",
+        "hash": "16523189370859092246"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-login/tango-auth-login.component.ts",
+        "hash": "1459447242152617134"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-signup/tango-auth-signup.component.html",
+        "hash": "9193190930220140224"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-signup/tango-auth-signup.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-signup/tango-auth-signup.component.spec.ts",
+        "hash": "18373036028627136728"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth-signup/tango-auth-signup.component.ts",
+        "hash": "16307196142351484197"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth/tango-auth.component.html",
+        "hash": "6208467867053179966"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth/tango-auth.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth/tango-auth.component.spec.ts",
+        "hash": "13992996501607712029"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/components/tango-auth/tango-auth.component.ts",
+        "hash": "11575016109397182225"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/guards/auth.guard.ts",
+        "hash": "11894886662787767426"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/services/auth.service.ts",
+        "hash": "6200685341093734318"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/tango-auth-routing.module.ts",
+        "hash": "4174066302045031012"
+      },
+      {
+        "file": "projects/tango-auth/src/lib/tango-auth.module.ts",
+        "hash": "7447287794370533833"
+      },
+      {
+        "file": "projects/tango-auth/src/public-api.ts",
+        "hash": "13014480850014456651"
+      },
+      {
+        "file": "projects/tango-auth/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-auth/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-auth/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-manage-audit/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-manage-audit/README.md",
+        "hash": "2807958292098125170"
+      },
+      {
+        "file": "projects/tango-manage-audit/ng-package.json",
+        "hash": "8780346845792595558"
+      },
+      {
+        "file": "projects/tango-manage-audit/package.json",
+        "hash": "13299555999340351048"
+      },
+      {
+        "file": "projects/tango-manage-audit/src/lib/components/tango-manage-audit/tango-manage-audit.component.html",
+        "hash": "17848211336319068633"
+      },
+      {
+        "file": "projects/tango-manage-audit/src/lib/components/tango-manage-audit/tango-manage-audit.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-manage-audit/src/lib/components/tango-manage-audit/tango-manage-audit.component.spec.ts",
+        "hash": "15490510563599787596"
+      },
+      {
+        "file": "projects/tango-manage-audit/src/lib/components/tango-manage-audit/tango-manage-audit.component.ts",
+        "hash": "13568882396654810219"
+      },
+      {
+        "file": "projects/tango-manage-audit/src/lib/tango-manage-audit-routing.module.ts",
+        "hash": "16198130205864350612"
+      },
+      {
+        "file": "projects/tango-manage-audit/src/lib/tango-manage-audit.module.ts",
+        "hash": "15749418691807002690"
+      },
+      {
+        "file": "projects/tango-manage-audit/src/public-api.ts",
+        "hash": "7973035894791985048"
+      },
+      {
+        "file": "projects/tango-manage-audit/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-manage-audit/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-manage-audit/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-manage-brands/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-manage-brands/README.md",
+        "hash": "13211444064185794909"
+      },
+      {
+        "file": "projects/tango-manage-brands/ng-package.json",
+        "hash": "6820964899769715168"
+      },
+      {
+        "file": "projects/tango-manage-brands/package.json",
+        "hash": "2682826441806772090"
+      },
+      {
+        "file": "projects/tango-manage-brands/src/lib/components/tango-manage-brands/tango-manage-brands.component.html",
+        "hash": "15540508096637300452"
+      },
+      {
+        "file": "projects/tango-manage-brands/src/lib/components/tango-manage-brands/tango-manage-brands.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-manage-brands/src/lib/components/tango-manage-brands/tango-manage-brands.component.spec.ts",
+        "hash": "1259196135001892111"
+      },
+      {
+        "file": "projects/tango-manage-brands/src/lib/components/tango-manage-brands/tango-manage-brands.component.ts",
+        "hash": "3330923536209933356"
+      },
+      {
+        "file": "projects/tango-manage-brands/src/lib/tango-manage-brands-routing.module.ts",
+        "hash": "7267334523789873729"
+      },
+      {
+        "file": "projects/tango-manage-brands/src/lib/tango-manage-brands.module.ts",
+        "hash": "6966425435125920650"
+      },
+      {
+        "file": "projects/tango-manage-brands/src/public-api.ts",
+        "hash": "2622767137183380261"
+      },
+      {
+        "file": "projects/tango-manage-brands/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-manage-brands/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-manage-brands/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-manage-overview/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-manage-overview/README.md",
+        "hash": "5221813831431390743"
+      },
+      {
+        "file": "projects/tango-manage-overview/ng-package.json",
+        "hash": "15238600071205146336"
+      },
+      {
+        "file": "projects/tango-manage-overview/package.json",
+        "hash": "2796784281872436637"
+      },
+      {
+        "file": "projects/tango-manage-overview/src/lib/components/tango-manage-overview/tango-manage-overview.component.html",
+        "hash": "11324074081169820457"
+      },
+      {
+        "file": "projects/tango-manage-overview/src/lib/components/tango-manage-overview/tango-manage-overview.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-manage-overview/src/lib/components/tango-manage-overview/tango-manage-overview.component.spec.ts",
+        "hash": "17444379287106571315"
+      },
+      {
+        "file": "projects/tango-manage-overview/src/lib/components/tango-manage-overview/tango-manage-overview.component.ts",
+        "hash": "8478720783869248562"
+      },
+      {
+        "file": "projects/tango-manage-overview/src/lib/tango-manage-overview-routing.module.ts",
+        "hash": "1232417126552212629"
+      },
+      {
+        "file": "projects/tango-manage-overview/src/lib/tango-manage-overview.module.ts",
+        "hash": "17370627677802231463"
+      },
+      {
+        "file": "projects/tango-manage-overview/src/public-api.ts",
+        "hash": "10058300738675483245"
+      },
+      {
+        "file": "projects/tango-manage-overview/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-manage-overview/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-manage-overview/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-manage-reports/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-manage-reports/README.md",
+        "hash": "3592610885710420587"
+      },
+      {
+        "file": "projects/tango-manage-reports/ng-package.json",
+        "hash": "10879215704841796521"
+      },
+      {
+        "file": "projects/tango-manage-reports/package.json",
+        "hash": "6750539741962982930"
+      },
+      {
+        "file": "projects/tango-manage-reports/src/lib/components/tango-manage-reports/tango-manage-reports.component.html",
+        "hash": "7748699374089710711"
+      },
+      {
+        "file": "projects/tango-manage-reports/src/lib/components/tango-manage-reports/tango-manage-reports.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-manage-reports/src/lib/components/tango-manage-reports/tango-manage-reports.component.spec.ts",
+        "hash": "10928183186949743918"
+      },
+      {
+        "file": "projects/tango-manage-reports/src/lib/components/tango-manage-reports/tango-manage-reports.component.ts",
+        "hash": "9298868609626815181"
+      },
+      {
+        "file": "projects/tango-manage-reports/src/lib/tango-manage-reports-routing.module.ts",
+        "hash": "7786308951271045023"
+      },
+      {
+        "file": "projects/tango-manage-reports/src/lib/tango-manage-reports.module.ts",
+        "hash": "9410871322687387951"
+      },
+      {
+        "file": "projects/tango-manage-reports/src/public-api.ts",
+        "hash": "5990065037671761350"
+      },
+      {
+        "file": "projects/tango-manage-reports/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-manage-reports/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-manage-reports/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-manage-settings/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-manage-settings/README.md",
+        "hash": "1895835284250097975"
+      },
+      {
+        "file": "projects/tango-manage-settings/ng-package.json",
+        "hash": "3447640730804994412"
+      },
+      {
+        "file": "projects/tango-manage-settings/package.json",
+        "hash": "5201014387519937948"
+      },
+      {
+        "file": "projects/tango-manage-settings/src/lib/components/tango-manage-settings/tango-manage-settings.component.html",
+        "hash": "6291723914725448579"
+      },
+      {
+        "file": "projects/tango-manage-settings/src/lib/components/tango-manage-settings/tango-manage-settings.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-manage-settings/src/lib/components/tango-manage-settings/tango-manage-settings.component.spec.ts",
+        "hash": "9908372469620488841"
+      },
+      {
+        "file": "projects/tango-manage-settings/src/lib/components/tango-manage-settings/tango-manage-settings.component.ts",
+        "hash": "6774071290359963917"
+      },
+      {
+        "file": "projects/tango-manage-settings/src/lib/tango-manage-settings-routing.module.ts",
+        "hash": "6795917503105180016"
+      },
+      {
+        "file": "projects/tango-manage-settings/src/lib/tango-manage-settings.module.ts",
+        "hash": "4306368571957977175"
+      },
+      {
+        "file": "projects/tango-manage-settings/src/public-api.ts",
+        "hash": "2187652254888682256"
+      },
+      {
+        "file": "projects/tango-manage-settings/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-manage-settings/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-manage-settings/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-manage-stores/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-manage-stores/README.md",
+        "hash": "16823506612694569447"
+      },
+      {
+        "file": "projects/tango-manage-stores/ng-package.json",
+        "hash": "8754504056465295871"
+      },
+      {
+        "file": "projects/tango-manage-stores/package.json",
+        "hash": "16786708352508389365"
+      },
+      {
+        "file": "projects/tango-manage-stores/src/lib/components/tango-manage-stores/tango-manage-stores.component.html",
+        "hash": "9447868734757374220"
+      },
+      {
+        "file": "projects/tango-manage-stores/src/lib/components/tango-manage-stores/tango-manage-stores.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-manage-stores/src/lib/components/tango-manage-stores/tango-manage-stores.component.spec.ts",
+        "hash": "12330624077913544869"
+      },
+      {
+        "file": "projects/tango-manage-stores/src/lib/components/tango-manage-stores/tango-manage-stores.component.ts",
+        "hash": "13857124636709076046"
+      },
+      {
+        "file": "projects/tango-manage-stores/src/lib/tango-manage-stores-routing.module.ts",
+        "hash": "10758523366238901859"
+      },
+      {
+        "file": "projects/tango-manage-stores/src/lib/tango-manage-stores.module.ts",
+        "hash": "18268956384214651936"
+      },
+      {
+        "file": "projects/tango-manage-stores/src/public-api.ts",
+        "hash": "8666943035521542866"
+      },
+      {
+        "file": "projects/tango-manage-stores/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-manage-stores/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-manage-stores/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-manage-tickets/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-manage-tickets/README.md",
+        "hash": "16301763551240534453"
+      },
+      {
+        "file": "projects/tango-manage-tickets/ng-package.json",
+        "hash": "532916070545312620"
+      },
+      {
+        "file": "projects/tango-manage-tickets/package.json",
+        "hash": "11577068533608874291"
+      },
+      {
+        "file": "projects/tango-manage-tickets/src/lib/components/tango-manage-tickets/tango-manage-tickets.component.html",
+        "hash": "3973972308257316770"
+      },
+      {
+        "file": "projects/tango-manage-tickets/src/lib/components/tango-manage-tickets/tango-manage-tickets.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-manage-tickets/src/lib/components/tango-manage-tickets/tango-manage-tickets.component.spec.ts",
+        "hash": "15429932023436719641"
+      },
+      {
+        "file": "projects/tango-manage-tickets/src/lib/components/tango-manage-tickets/tango-manage-tickets.component.ts",
+        "hash": "10236764036166611363"
+      },
+      {
+        "file": "projects/tango-manage-tickets/src/lib/tango-manage-tickets-routing.module.ts",
+        "hash": "12147836511067145092"
+      },
+      {
+        "file": "projects/tango-manage-tickets/src/lib/tango-manage-tickets.module.ts",
+        "hash": "14792828938288890840"
+      },
+      {
+        "file": "projects/tango-manage-tickets/src/public-api.ts",
+        "hash": "17254046097037607637"
+      },
+      {
+        "file": "projects/tango-manage-tickets/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-manage-tickets/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-manage-tickets/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-manage-users/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-manage-users/README.md",
+        "hash": "10980123933881145786"
+      },
+      {
+        "file": "projects/tango-manage-users/ng-package.json",
+        "hash": "9899521316058875933"
+      },
+      {
+        "file": "projects/tango-manage-users/package.json",
+        "hash": "12529697229801781101"
+      },
+      {
+        "file": "projects/tango-manage-users/src/lib/components/tango-manage-users/tango-manage-users.component.html",
+        "hash": "8066068256724859870"
+      },
+      {
+        "file": "projects/tango-manage-users/src/lib/components/tango-manage-users/tango-manage-users.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-manage-users/src/lib/components/tango-manage-users/tango-manage-users.component.spec.ts",
+        "hash": "195254898240802005"
+      },
+      {
+        "file": "projects/tango-manage-users/src/lib/components/tango-manage-users/tango-manage-users.component.ts",
+        "hash": "4473584642470329622"
+      },
+      {
+        "file": "projects/tango-manage-users/src/lib/tango-manage-users-routing.module.ts",
+        "hash": "1736977760110439536"
+      },
+      {
+        "file": "projects/tango-manage-users/src/lib/tango-manage-users.module.ts",
+        "hash": "12342553816154106524"
+      },
+      {
+        "file": "projects/tango-manage-users/src/public-api.ts",
+        "hash": "8074899153445252117"
+      },
+      {
+        "file": "projects/tango-manage-users/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-manage-users/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-manage-users/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-manage/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-manage/README.md",
+        "hash": "12452416489453610301"
+      },
+      {
+        "file": "projects/tango-manage/ng-package.json",
+        "hash": "6469847512420908277"
+      },
+      {
+        "file": "projects/tango-manage/package.json",
+        "hash": "17809451186886837500"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/components/tango-manage/tango-manage.component.html",
+        "hash": "989639239516487408"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/components/tango-manage/tango-manage.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/components/tango-manage/tango-manage.component.spec.ts",
+        "hash": "6744256047374970378"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/components/tango-manage/tango-manage.component.ts",
+        "hash": "13977141282241752995"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/route-wrappers/manage-audit-wrapper.module.ts",
+        "hash": "17020193173917186269"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/route-wrappers/manage-brands-wrapper.module.ts",
+        "hash": "8133220637183308337"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/route-wrappers/manage-overview-wrapper.module.ts",
+        "hash": "8186558100485330934"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/route-wrappers/manage-reports-wrapper.module.ts",
+        "hash": "12109790290298268825"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/route-wrappers/manage-settings-wrapper.module.ts",
+        "hash": "9757120849983636607"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/route-wrappers/manage-stores-wrapper.module.ts",
+        "hash": "5286185346029356963"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/route-wrappers/manage-tickets-wrapper.module.ts",
+        "hash": "6119999213458373883"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/route-wrappers/manage-users-wrapper.module.ts",
+        "hash": "5389820789601848311"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/tango-manage-routing.module.ts",
+        "hash": "1460060992900611395"
+      },
+      {
+        "file": "projects/tango-manage/src/lib/tango-manage.module.ts",
+        "hash": "11141051468196439463"
+      },
+      {
+        "file": "projects/tango-manage/src/public-api.ts",
+        "hash": "1366267483074389046"
+      },
+      {
+        "file": "projects/tango-manage/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-manage/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-manage/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-store-cameras/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-store-cameras/README.md",
+        "hash": "14207014483597314466"
+      },
+      {
+        "file": "projects/tango-store-cameras/ng-package.json",
+        "hash": "4488885971740636758"
+      },
+      {
+        "file": "projects/tango-store-cameras/package.json",
+        "hash": "6719766860520210963"
+      },
+      {
+        "file": "projects/tango-store-cameras/src/lib/components/tango-store-cameras/tango-store-cameras.component.html",
+        "hash": "18102868030167018284"
+      },
+      {
+        "file": "projects/tango-store-cameras/src/lib/components/tango-store-cameras/tango-store-cameras.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-store-cameras/src/lib/components/tango-store-cameras/tango-store-cameras.component.spec.ts",
+        "hash": "5773117844184668307"
+      },
+      {
+        "file": "projects/tango-store-cameras/src/lib/components/tango-store-cameras/tango-store-cameras.component.ts",
+        "hash": "10944743412853587209"
+      },
+      {
+        "file": "projects/tango-store-cameras/src/lib/tango-store-cameras-routing.module.ts",
+        "hash": "16133441301019163653"
+      },
+      {
+        "file": "projects/tango-store-cameras/src/lib/tango-store-cameras.module.ts",
+        "hash": "7144429259940099591"
+      },
+      {
+        "file": "projects/tango-store-cameras/src/public-api.ts",
+        "hash": "12493988283907840197"
+      },
+      {
+        "file": "projects/tango-store-cameras/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-store-cameras/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-store-cameras/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/README.md",
+        "hash": "11914001985920301276"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/ng-package.json",
+        "hash": "87714565338734817"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/package.json",
+        "hash": "16203486224392401660"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/src/lib/components/tango-store-data-mismatch/tango-store-data-mismatch.component.html",
+        "hash": "7583044712162823727"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/src/lib/components/tango-store-data-mismatch/tango-store-data-mismatch.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/src/lib/components/tango-store-data-mismatch/tango-store-data-mismatch.component.spec.ts",
+        "hash": "12076247648244229107"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/src/lib/components/tango-store-data-mismatch/tango-store-data-mismatch.component.ts",
+        "hash": "16140428855912676871"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/src/lib/tango-store-data-mismatch-routing.module.ts",
+        "hash": "9422604461377305267"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/src/lib/tango-store-data-mismatch.module.ts",
+        "hash": "10959852910569201104"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/src/public-api.ts",
+        "hash": "15439128196953645036"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-store-data-mismatch/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/README.md",
+        "hash": "17971684190734235420"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/ng-package.json",
+        "hash": "4377124773792865438"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/package.json",
+        "hash": "5548871743473112323"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/src/lib/components/tango-store-infrastructure/tango-store-infrastructure.component.html",
+        "hash": "6471255019043183227"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/src/lib/components/tango-store-infrastructure/tango-store-infrastructure.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/src/lib/components/tango-store-infrastructure/tango-store-infrastructure.component.spec.ts",
+        "hash": "14774023360167712633"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/src/lib/components/tango-store-infrastructure/tango-store-infrastructure.component.ts",
+        "hash": "12101570732460211496"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/src/lib/tango-store-infrastructure-routing.module.ts",
+        "hash": "8102191292294682698"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/src/lib/tango-store-infrastructure.module.ts",
+        "hash": "9974432989984670716"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/src/public-api.ts",
+        "hash": "6829544437827160262"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-store-infrastructure/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-store-mat/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-store-mat/README.md",
+        "hash": "5477446633226999696"
+      },
+      {
+        "file": "projects/tango-store-mat/ng-package.json",
+        "hash": "6065405283147505055"
+      },
+      {
+        "file": "projects/tango-store-mat/package.json",
+        "hash": "2904046509350834534"
+      },
+      {
+        "file": "projects/tango-store-mat/src/lib/components/tango-store-mat/tango-store-mat.component.html",
+        "hash": "3383331216791489037"
+      },
+      {
+        "file": "projects/tango-store-mat/src/lib/components/tango-store-mat/tango-store-mat.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-store-mat/src/lib/components/tango-store-mat/tango-store-mat.component.spec.ts",
+        "hash": "9901909903263882779"
+      },
+      {
+        "file": "projects/tango-store-mat/src/lib/components/tango-store-mat/tango-store-mat.component.ts",
+        "hash": "9874832821943210455"
+      },
+      {
+        "file": "projects/tango-store-mat/src/lib/tango-store-mat-routing.module.ts",
+        "hash": "17552651965884522435"
+      },
+      {
+        "file": "projects/tango-store-mat/src/lib/tango-store-mat.module.ts",
+        "hash": "16459064660632888464"
+      },
+      {
+        "file": "projects/tango-store-mat/src/public-api.ts",
+        "hash": "3161483771971684151"
+      },
+      {
+        "file": "projects/tango-store-mat/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-store-mat/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-store-mat/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-store-settings/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-store-settings/README.md",
+        "hash": "4434157421897112828"
+      },
+      {
+        "file": "projects/tango-store-settings/ng-package.json",
+        "hash": "6152828101557657752"
+      },
+      {
+        "file": "projects/tango-store-settings/package.json",
+        "hash": "15795144405700555481"
+      },
+      {
+        "file": "projects/tango-store-settings/src/lib/components/tango-store-settings/tango-store-settings.component.html",
+        "hash": "13734553713473584612"
+      },
+      {
+        "file": "projects/tango-store-settings/src/lib/components/tango-store-settings/tango-store-settings.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-store-settings/src/lib/components/tango-store-settings/tango-store-settings.component.spec.ts",
+        "hash": "3197228386285445783"
+      },
+      {
+        "file": "projects/tango-store-settings/src/lib/components/tango-store-settings/tango-store-settings.component.ts",
+        "hash": "11692373212064300854"
+      },
+      {
+        "file": "projects/tango-store-settings/src/lib/tango-store-settings-routing.module.ts",
+        "hash": "2791582445863627262"
+      },
+      {
+        "file": "projects/tango-store-settings/src/lib/tango-store-settings.module.ts",
+        "hash": "15589512383041536767"
+      },
+      {
+        "file": "projects/tango-store-settings/src/public-api.ts",
+        "hash": "7560956535060764246"
+      },
+      {
+        "file": "projects/tango-store-settings/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-store-settings/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-store-settings/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-store-zones/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-store-zones/README.md",
+        "hash": "3790954899637979474"
+      },
+      {
+        "file": "projects/tango-store-zones/ng-package.json",
+        "hash": "14998831650165067816"
+      },
+      {
+        "file": "projects/tango-store-zones/package.json",
+        "hash": "10214726065666553554"
+      },
+      {
+        "file": "projects/tango-store-zones/src/lib/tango-store-zones-routing.module.ts",
+        "hash": "8803391827914997343"
+      },
+      {
+        "file": "projects/tango-store-zones/src/lib/tango-store-zones.module.ts",
+        "hash": "2237801902674787161"
+      },
+      {
+        "file": "projects/tango-store-zones/src/lib/tango-store-zones/tango-store-zones.component.html",
+        "hash": "218974799319322610"
+      },
+      {
+        "file": "projects/tango-store-zones/src/lib/tango-store-zones/tango-store-zones.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-store-zones/src/lib/tango-store-zones/tango-store-zones.component.spec.ts",
+        "hash": "16191621125750283835"
+      },
+      {
+        "file": "projects/tango-store-zones/src/lib/tango-store-zones/tango-store-zones.component.ts",
+        "hash": "8008024036552847047"
+      },
+      {
+        "file": "projects/tango-store-zones/src/public-api.ts",
+        "hash": "12463364404371455320"
+      },
+      {
+        "file": "projects/tango-store-zones/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-store-zones/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-store-zones/tsconfig.spec.json",
+        "hash": "6187331034101419811"
+      },
+      {
+        "file": "projects/tango-store/.eslintrc.json",
+        "hash": "14363505610686800042"
+      },
+      {
+        "file": "projects/tango-store/README.md",
+        "hash": "10518182240037106876"
+      },
+      {
+        "file": "projects/tango-store/ng-package.json",
+        "hash": "15356568765511049745"
+      },
+      {
+        "file": "projects/tango-store/package.json",
+        "hash": "10728303816642520326"
+      },
+      {
+        "file": "projects/tango-store/src/lib/components/tango-store/tango-store.component.html",
+        "hash": "10371335324349767171"
+      },
+      {
+        "file": "projects/tango-store/src/lib/components/tango-store/tango-store.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/tango-store/src/lib/components/tango-store/tango-store.component.spec.ts",
+        "hash": "2828792502621079745"
+      },
+      {
+        "file": "projects/tango-store/src/lib/components/tango-store/tango-store.component.ts",
+        "hash": "1193070683530765557"
+      },
+      {
+        "file": "projects/tango-store/src/lib/route-wrappers/tango-store-cameras-wrapper.module.ts",
+        "hash": "7742450923455268594"
+      },
+      {
+        "file": "projects/tango-store/src/lib/route-wrappers/tango-store-data-mismatch-wrapper.module.ts",
+        "hash": "932296514083714017"
+      },
+      {
+        "file": "projects/tango-store/src/lib/route-wrappers/tango-store-infrastructure-wrapper.module.ts",
+        "hash": "14075505070322142296"
+      },
+      {
+        "file": "projects/tango-store/src/lib/route-wrappers/tango-store-mat-wrapper.module.ts",
+        "hash": "12609849909338950620"
+      },
+      {
+        "file": "projects/tango-store/src/lib/route-wrappers/tango-store-settings-wrapper.module.ts",
+        "hash": "16559582134621172507"
+      },
+      {
+        "file": "projects/tango-store/src/lib/route-wrappers/tango-store-zones-wrapper.module.ts",
+        "hash": "8135411792961067996"
+      },
+      {
+        "file": "projects/tango-store/src/lib/tango-store-routing.module.ts",
+        "hash": "18260781318586878815"
+      },
+      {
+        "file": "projects/tango-store/src/lib/tango-store.module.ts",
+        "hash": "1443011267500517496"
+      },
+      {
+        "file": "projects/tango-store/src/public-api.ts",
+        "hash": "7283837733534892162"
+      },
+      {
+        "file": "projects/tango-store/tsconfig.lib.json",
+        "hash": "3854248313799891276"
+      },
+      {
+        "file": "projects/tango-store/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/tango-store/tsconfig.spec.json",
         "hash": "6187331034101419811"
       },
       {
@@ -2314,7 +3310,7 @@
       },
       {
         "file": "src/app/app-routing.module.ts",
-        "hash": "5129154511566676524"
+        "hash": "4108179450253177367"
       },
       {
         "file": "src/app/app.component.html",
@@ -11614,7 +12610,7 @@
       },
       {
         "file": "src/assets/sass/core/vendors/plugins/_vis-timeline.scss",
-        "hash": "8839952645603204428"
+        "hash": "7704072302063059393"
       },
       {
         "file": "src/assets/sass/core/vendors/plugins/mixins/_nouislider.scss",
@@ -11666,7 +12662,7 @@
       },
       {
         "file": "src/assets/sass/layout/sidebar/_sidebar-dark.scss",
-        "hash": "17542377501046098829"
+        "hash": "5175383334108003996"
       },
       {
         "file": "src/assets/sass/layout/sidebar/_sidebar-light.scss",
@@ -11695,6 +12691,70 @@
       {
         "file": "src/assets/splash-screen.css",
         "hash": "16793164020078763737"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/audit.svg",
+        "hash": "5859856663215246594"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/birds_eye.svg",
+        "hash": "13643501428979751164"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/brands.svg",
+        "hash": "17444820689055086691"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/control_center.svg",
+        "hash": "3455772032025860906"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/overview.svg",
+        "hash": "17795129786091383068"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/reports.svg",
+        "hash": "7140434788229457835"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/settings.svg",
+        "hash": "7243344422059008659"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/stores.svg",
+        "hash": "12075411740067708797"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/tango_logo.svg",
+        "hash": "9145128305189478629"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/tango_logo_text.svg",
+        "hash": "5778692167370794726"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/tango_revop.svg",
+        "hash": "2513392144192379181"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/tango_sop.svg",
+        "hash": "35745329003976800"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/tango_traffic.svg",
+        "hash": "17173066218238199255"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/tango_zone.svg",
+        "hash": "13973820344964188560"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/tickets.svg",
+        "hash": "4802879179761263889"
+      },
+      {
+        "file": "src/assets/tango/sidemenu-icons/users.svg",
+        "hash": "682782480016825705"
       },
       {
         "file": "src/environments/environment.dev.ts",
@@ -11746,7 +12806,7 @@
       },
       {
         "file": "tsconfig.json",
-        "hash": "17085394333344970632"
+        "hash": "878034838778002708"
       },
       {
         "file": "tsconfig.spec.json",

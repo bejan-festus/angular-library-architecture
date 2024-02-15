@@ -1,6 +1,14 @@
 import { Routes } from '@angular/router';
 
 const Routing: Routes = [
+  {
+    path: 'manage',
+    loadChildren: () => import('./route-wraper-modules/manage-wrapper.module').then((m) => m.ManageWrapperModule),
+  },
+  {
+    path: 'manage/stores/:id',
+    loadChildren: () => import('./route-wraper-modules/store-wrapper.module').then((m) => m.StoreWrapperModule),
+  },
   // {
   //   path: 'dashboard',
   //   loadChildren: () => import('./route-wraper-modules/dashboard-wrapper.module').then((m) => m.DashboardWrapperModule),
@@ -14,11 +22,11 @@ const Routing: Routes = [
   //   loadChildren: () => import('../modules/profile/profile.module').then((m) => m.ProfileModule),
   //   data: { layout: 'light-sidebar' },
   // },
-  {
-    path: 'crafted/account',
-    loadChildren: () => import('./route-wraper-modules/account-wrapper.module').then((m) => m.AccountWrapperModule),
-    // data: { layout: 'dark-header' },
-  },
+  // {
+  //   path: 'crafted/account',
+  //   loadChildren: () => import('./route-wraper-modules/account-wrapper.module').then((m) => m.AccountWrapperModule),
+  //   // data: { layout: 'dark-header' },
+  // },
   // {
   //   path: 'crafted/pages/wizards',
   //   loadChildren: () => import('../modules/wizards/wizards.module').then((m) => m.WizardsModule),
